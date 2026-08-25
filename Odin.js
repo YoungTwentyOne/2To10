@@ -3,6 +3,7 @@ function Resultat(el) {
         var resultat = el.Choose2.value;
         var iz = el.System.value;
         var v = el.System2.value;
+        var o = el.Oshipka.value;
         if(iz == "Двоичная")
          var iz2 = 2;
         else if(iz == "Восьмиричная")
@@ -20,6 +21,12 @@ function Resultat(el) {
          var v2 = 10;
         else if(v == "Шестнадцатиричная")
          var v2 = 16;
+
+        if(isNan(dano))
+        {
+            el.Oshipka.value = "Пожалуйста, введите число!";
+            return false;
+        }
 
          resultat = parseInt(String(dano), iz2);
          var number = resultat.toString(v2);
