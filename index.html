@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<title>Переводчик из десятиричной системы в двоичную и наоборот</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="images/ICON.png">
+    </head>
+    <body>
+    <form class="header" onsubmit="return Resultat(this)">
+        <div>
+            <nav>
+                <img src="images/ICON.png" height=70px width=70px>
+                <li class="ZagoLOVEok">
+                    Перевод чисел из систем счисления
+                </li>
+                <li class="Podskazka">
+                    Введите число и выберите систему счисления для автоматического перевода
+                </li>
+                <li class="Polya">
+                    <input name="Choose1" type="text" placeholder="Введите число">
+                    <input name="Choose2" type="text" placeholder="Результат" readonly>
+                </li>
+                <li class="Vibor">
+                    <select name="System">
+                        <option>Двоичная</option>
+                        <option>Восьмиричная</option>
+                        <option selected>Десятиричная</option>
+                        <option>Шестнадцатиричная</option>
+                    </select>
+                    <select name="System2">
+                        <option selected>Двоичная</option>
+                        <option>Восьмиричная</option>
+                        <option>Десятиричная</option>
+                        <option>Шестнадцатиричная</option>
+                    </select>
+                </li>
+                <li class="Knopka">
+                    <button type="submit">Перевести</button>
+                </li>
+            </nav>
+        </div>
+    </form>
+    <script src="Odin.js"></script>
+</body>
+</html>
