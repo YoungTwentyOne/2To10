@@ -14,7 +14,7 @@ body {
     font-weight: 450;
     font-size: 60px;
     background-image: linear-gradient(250deg, 
-    #833AB4 50%, #FD1D1D 100%, #FCB045 50%);
+    #833AB4 50%, #ebbebe 100%, #FCB045 50%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -75,6 +75,7 @@ body {
     padding-top: 20px;
     list-style: none;
     font-weight: 450;
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: space-between;
