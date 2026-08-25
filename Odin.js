@@ -22,7 +22,7 @@ function Resultat(el) {
         else if(v == "Шестнадцатиричная")
          var v2 = 16;
 
-        if(isNan(dano))
+        if(isNaN(dano))
         {
             el.Oshipka.value = "Пожалуйста, введите число!";
             return false;
