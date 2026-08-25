@@ -70,3 +70,15 @@ body {
     padding-top: 0px;
     margin-inline: auto;
 }
+
+.Oshipka{
+    padding-top: 20px;
+    list-style: none;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 100px;
+    height: 20px;
+    color: red;
+}
