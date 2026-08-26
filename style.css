@@ -84,7 +84,7 @@ body {
     color: red;
 }
 
-@media (max-width:768px) {
+@media (max-width:1250px) {
     .ZagoLOVEok{
     list-style: none;
     font-weight: 450;
