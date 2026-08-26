@@ -1,4 +1,4 @@
-function Resultat(el) {
+function Resultat(event, el) {
         event.preventDefault();
         var dano = el.Choose1.value;
         var resultat = el.Choose2.value;
