@@ -1,10 +1,9 @@
 function Resultat(event, el) {
         event.preventDefault();
         var dano = el.Choose1.value;
-        var resultat = el.Choose2.value;
         var iz = el.System.value;
         var v = el.System2.value;
-        var o = el.Oshipka.value;
+        var o = el.querySelector('.Oshipka');
         if(iz == "Двоичная")
          var iz2 = 2;
         else if(iz == "Восьмиричная")
@@ -24,16 +23,17 @@ function Resultat(event, el) {
          var v2 = 16;
 
         if(isNaN(dano) || dano.trim() === "") {
-        el.Oshipka.textContent = "Пожалуйста, введите число!";
+        o.textContent = "Пожалуйста, введите число!";
         el.Choose2.value = "";
         return false;
     } else {
         el.Oshipka.textContent = "";
     }
 
-         resultat = parseInt(String(dano), iz2);
+        var resultat = parseInt(dano, iz2);
+
          if(isNaN(resultat)) {
-        el.Oshipka.textContent = "Некорректное число для выбранной системы!";
+        o.textContent = "Некорректное число для выбранной системы!";
         el.Choose2.value = "";
         return false;
     }
