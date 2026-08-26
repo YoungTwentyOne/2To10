@@ -17,29 +17,29 @@
                 <div class="Podskazka">
                     Введите число и выберите систему счисления для автоматического перевода
                 </div>
-                <form onsubmit="Resultat(event, this); return false;">
+                <form id="converterForm">
                     <div class="Polya">
-                        <input name="Choose1" type="text" placeholder="Введите число">
-                        <input name="Choose2" type="text" placeholder="Результат" readonly>
+                        <input id="inputNumber" type="text" placeholder="Введите число">
+                        <input id="resultNumber" type="text" placeholder="Результат" readonly>
                     </div>
                     <div class="Vibor">
-                        <select name="System">
+                        <select id="fromSystem">
                             <option>Двоичная</option>
                             <option>Восьмиричная</option>
                             <option selected>Десятиричная</option>
                             <option>Шестнадцатиричная</option>
                         </select>
-                        <select name="System2">
+                        <select id="toSystem">
                             <option selected>Двоичная</option>
                             <option>Восьмиричная</option>
                             <option>Десятиричная</option>
-                            <option>Истиричная</option>
+                            <option>Шестнадцатиричная</option>
                         </select>
                     </div>
                     <div class="Knopka">
-                        <button type="submit">Перевести</button>
+                        <button type="button" onclick="convertNumber()">Перевести</button>
                     </div>
-                    <div class="Oshipka"></div>
+                    <div id="errorMessage" class="Oshipka"></div>
                 </form>
             </nav>
         </div>
