@@ -84,13 +84,13 @@ body {
     color: red;
 }
 
-@media (max-width:1250px) {
+@media (max-width:1050px) {
     .ZagoLOVEok{
     list-style: none;
     font-weight: 450;
     font-size: 40px;
     background-image: linear-gradient(250deg, 
-    blue 50%, #ebbebe 100%, #FCB045 50%);
+    blue 50%, green 100%, red 50%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
