@@ -83,3 +83,80 @@ body {
     height: 20px;
     color: red;
 }
+
+@media (max-width:768px) {
+    .ZagoLOVEok{
+    list-style: none;
+    font-weight: 450;
+    font-size: 40px;
+    background-image: linear-gradient(250deg, 
+    blue 50%, #ebbebe 100%, #FCB045 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Podskazka{
+    padding-top: 5px;
+    list-style: none;
+    font-weight: 450;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Polya{
+    padding-top: 30px;
+    list-style: none;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 100px;
+    height: 40px;
+}
+
+.Vibor{
+    padding-top: 20px;
+    list-style: none;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 100px;
+    height: 40px;
+}
+
+.Knopka{
+    padding-top: 20px;
+    list-style: none;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 100px;
+    height: 40px;
+}
+
+.header {
+    padding-top: 0px;
+    margin-inline: auto;
+}
+
+.Oshipka{
+    padding-top: 20px;
+    list-style: none;
+    font-weight: 450;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 100px;
+    height: 20px;
+    color: red;
+}
+}
