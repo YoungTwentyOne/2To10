@@ -1,4 +1,5 @@
 function Resultat(el) {
+        event.preventDefault();
         var dano = el.Choose1.value;
         var resultat = el.Choose2.value;
         var iz = el.System.value;
@@ -22,13 +23,20 @@ function Resultat(el) {
         else if(v == "Шестнадцатиричная")
          var v2 = 16;
 
-        if(isNaN(dano))
-        {
-            el.Oshipka.value = "Пожалуйста, введите число!";
-            return false;
-        }
+        if(isNaN(dano) || dano.trim() === "") {
+        el.Oshipka.textContent = "Пожалуйста, введите число!";
+        el.Choose2.value = "";
+        return false;
+    } else {
+        el.Oshipka.textContent = "";
+    }
 
          resultat = parseInt(String(dano), iz2);
+         if(isNaN(resultat)) {
+        el.Oshipka.textContent = "Некорректное число для выбранной системы!";
+        el.Choose2.value = "";
+        return false;
+    }
          var number = resultat.toString(v2);
          el.Choose2.value = number;
          
